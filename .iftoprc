@@ -1,0 +1,5 @@
+filter-code: not port domain
+port-display: on
+use-bytes: yes
+line-display: one-line-both
+show-totals: yes
