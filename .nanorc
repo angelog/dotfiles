@@ -13,4 +13,4 @@ set tabsize 2
 set titlecolor red black
 set statuscolor red black
 
-include "/usr/share/nano/*.nanorc"
+include "/usr/local/share/nano/*.nanorc"
