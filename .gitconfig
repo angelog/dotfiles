@@ -1,0 +1,10 @@
+[user]
+	name = Angelo Geels
+	email = spansjh@gmail.com
+	signingkey = BF1C0F9B
+[push]
+	default = matching
+[core]
+	pager = less -x2
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
