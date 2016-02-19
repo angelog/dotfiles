@@ -13,7 +13,7 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git)
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/home/angelo/dev/nim/bin:/home/angelo/.nimble/bin"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -22,3 +22,9 @@ export EDITOR='nano'
 
 # Aliases
 alias ll='ls -alF'
+function lets {
+	/home/angelo/letsencrypt/letsencrypt-auto certonly -a webroot --webroot-path /var/www_$1/ -d $1 -d www.$1 --server https://acme-v01.api.letsencrypt.org/directory
+}
+function sublets {
+	/home/angelo/letsencrypt/letsencrypt-auto certonly -a webroot --webroot-path /var/www_$1/ -d $1 --server https://acme-v01.api.letsencrypt.org/directory
+}
