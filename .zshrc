@@ -2,7 +2,7 @@
 export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="dpoggi"
+ZSH_THEME="juanghurtado"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 DISABLE_AUTO_UPDATE="true"
@@ -28,3 +28,4 @@ function lets {
 function sublets {
 	/home/angelo/letsencrypt/letsencrypt-auto certonly -a webroot --webroot-path /var/www_$1/ -d $1 --server https://acme-v01.api.letsencrypt.org/directory
 }
+alias gst='git status --short'
