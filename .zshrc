@@ -29,3 +29,5 @@ function sublets {
 	/home/angelo/letsencrypt/letsencrypt-auto certonly -a webroot --webroot-path /var/www_$1/ -d $1 --server https://acme-v01.api.letsencrypt.org/directory
 }
 alias gst='git status --short'
+alias sst='~/svn-color.py status'
+alias slol='svn log -l 50 | perl -l40pe "s/^-+/\\n/" | less -S'
