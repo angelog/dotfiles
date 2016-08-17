@@ -6,4 +6,4 @@ tint2 &
 
 volumeicon &
 
-feh --bg-scale ~/Pictures/wall1.png &
+feh --bg-scale ~/.config/openbox/wall.png &
