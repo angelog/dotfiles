@@ -1,5 +1,7 @@
 ~/.config/openbox/update-monitor-position &
 
+xcompmgr &
+
 tint2 &
 
 volumeicon &
