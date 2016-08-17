@@ -109,10 +109,9 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
-    <keybind key="A-Print">
+    <keybind key="C-A-g">
       <action name="Execute">
-        <command>scrot -s</command>
+        <command>sh -c "gnome-screenshot -a -f ~/Pictures/Screenshots/$(date '+%Y%m%d-%H%M%S').png"</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
