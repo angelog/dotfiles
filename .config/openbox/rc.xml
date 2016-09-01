@@ -9,6 +9,8 @@
     <followMouse>no</followMouse>
     <focusLast>yes</focusLast>
     <underMouse>no</underMouse>
+    <focusDelay>0</focusDelay>
+    <raiseOnFocus>no</raiseOnFocus>
   </focus>
   <placement>
     <policy>Smart</policy>
@@ -17,7 +19,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Nightmare-01</name>
+    <name>Onyx-Citrus</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -71,12 +73,17 @@
   <desktops>
     <number>1</number>
     <firstdesk>1</firstdesk>
-    <names></names>
+    <names/>
     <popupTime>875</popupTime>
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
     <popupShow>Never</popupShow>
+    <popupPosition>Center</popupPosition>
+    <popupFixedPosition>
+      <x>0</x>
+      <y>0</y>
+    </popupFixedPosition>
   </resize>
   <margins>
     <top>0</top>
@@ -170,8 +177,25 @@
         <command>gmrun</command>
       </action>
     </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>slock</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
+    <context name="Frame Desktop">
+      <mousebind button="C-S-Up" action="Click">
+        <action name="Execute">
+          <command>amixer sset Master,0 2+</command>
+        </action>
+      </mousebind>
+      <mousebind button="C-S-Down" action="Click">
+        <action name="Execute">
+          <command>amixer sset Master,0 2-</command>
+        </action>
+      </mousebind>
+    </context>
     <dragThreshold>4</dragThreshold>
     <doubleClickTime>500</doubleClickTime>
     <context name="Frame">
@@ -356,7 +380,7 @@
       </mousebind>
     </context>
     <context name="Root">
-    	<!--
+      <!--
       <mousebind button="Middle" action="Press">
         <action name="ShowMenu">
           <menu>client-list-combined-menu</menu>
@@ -391,6 +415,7 @@
         </action>
       </mousebind>
     </context>
+    <screenEdgeWarpTime>400</screenEdgeWarpTime>
   </mouse>
   <menu>
     <file>/var/lib/openbox/debian-menu.xml</file>

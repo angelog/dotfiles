@@ -21,6 +21,9 @@
     <item label="Qt Creator">
       <action name="Execute"><execute>~/apps/qtcreator/bin/qtcreator</execute></action>
     </item>
+    <item label="Sublime Text">
+      <action name="Execute"><execute>/opt/sublime_text/sublime_text</execute></action>
+    </item>
   </menu>
   <separator />
   <menu id="ObMenu" label="Openbox">

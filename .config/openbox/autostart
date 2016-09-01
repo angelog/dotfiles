@@ -1,9 +1,13 @@
 ~/.config/openbox/update-monitor-position
 
+feh --bg-scale ~/Pictures/wall1.png &
+
 xcompmgr &
 
 tint2 &
 
 volumeicon &
 
-feh --bg-scale ~/.config/openbox/wall.png &
+slack &
+
+xflux &
