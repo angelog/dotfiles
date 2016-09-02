@@ -1,8 +1,8 @@
 ~/.config/openbox/update-monitor-position
 
-feh --bg-scale ~/Pictures/wall1.png &
+compton -c &
 
-xcompmgr &
+pcmanfm --desktop &
 
 tint2 &
 
