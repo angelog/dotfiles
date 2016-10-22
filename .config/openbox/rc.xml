@@ -187,12 +187,12 @@
     <context name="Frame Desktop">
       <mousebind button="C-S-Up" action="Click">
         <action name="Execute">
-          <command>amixer sset Master,0 2+</command>
+          <command>amixer -D pulse sset Master 1%+</command>
         </action>
       </mousebind>
       <mousebind button="C-S-Down" action="Click">
         <action name="Execute">
-          <command>amixer sset Master,0 2-</command>
+          <command>amixer -D pulse sset Master 1%-</command>
         </action>
       </mousebind>
     </context>
