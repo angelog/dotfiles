@@ -2,10 +2,10 @@
 export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="mortalscumbag"
+ZSH_THEME="candy"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
+#DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -13,20 +13,20 @@ DISABLE_AUTO_UPDATE="true"
 plugins=(git)
 
 # User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/home/angelo/dev/nim/bin:/home/angelo/.nimble/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:${HOME}/apps"
 
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
-export EDITOR='nano'
+export EDITOR='micro'
 
 # Aliases
 alias ll='ls -alF'
 function lets {
-	/home/angelo/letsencrypt/letsencrypt-auto certonly -a webroot --webroot-path /var/www_$1/ -d $1 -d www.$1 --server https://acme-v01.api.letsencrypt.org/directory
+	${HOME}/letsencrypt/letsencrypt-auto certonly -a webroot --webroot-path /var/www_$1/ -d $1 -d www.$1 --server https://acme-v01.api.letsencrypt.org/directory
 }
 function sublets {
-	/home/angelo/letsencrypt/letsencrypt-auto certonly -a webroot --webroot-path /var/www_$1/ -d $1 --server https://acme-v01.api.letsencrypt.org/directory
+	${HOME}/letsencrypt/letsencrypt-auto certonly -a webroot --webroot-path /var/www_$1/ -d $1 --server https://acme-v01.api.letsencrypt.org/directory
 }
 
 alias gst='git status --short'
