@@ -10,7 +10,7 @@ ZSH_THEME="candy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git git-extras sublime)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:${HOME}/apps"
@@ -35,3 +35,5 @@ alias sst="svn status | grep '^[^?].*$' --color=none"
 alias sl='svn update'
 alias slol='svn log -l 50 | perl -l40pe "s/^-+/\\n/" | less -S'
 alias sc='svn commit'
+
+alias nano='echo USE MICRO YOU DOOFUS'
