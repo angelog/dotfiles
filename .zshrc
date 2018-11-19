@@ -2,7 +2,7 @@
 export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="mortalscumbag"
+ZSH_THEME="muse"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 #DISABLE_AUTO_UPDATE="true"
@@ -18,7 +18,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:${HOME}/a
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
-export EDITOR='micro'
+export EDITOR='vim'
 
 # Aliases
 alias ll='ls -alF'
@@ -36,4 +36,3 @@ alias sl='svn update'
 alias slol='svn log -l 50 | perl -l40pe "s/^-+/\\n/" | less -S'
 alias sc='svn commit'
 
-alias nano='echo USE MICRO YOU DOOFUS'
