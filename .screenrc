@@ -1,2 +1,0 @@
-hardstatus string "%{= KR} %{+b}%H%{-b} %{= KW} %-w%{= kR}[%f%{+b}%n%{-b} %t]%{= KW}%+w %=%{+b KR} %D %d %M %C %a "
-#caption always "%{= RW} stuff %{= KW} %=sdf"
