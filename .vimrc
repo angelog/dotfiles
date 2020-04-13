@@ -1,6 +1,3 @@
-" For taglist
-filetype on
-
 " Line numbers
 set number
 
@@ -8,3 +5,5 @@ set number
 set tabstop=2
 set shiftwidth=2
 
+" Automatically indent
+set cindent
